@@ -80,19 +80,6 @@
 \end{tabular*}
 
 
-%
-%--------LINKS------------
-\section{Links}
-  \resumeSubHeadingListStart
-
-     \href{https://www.linkedin.com/in/bhushansonawane} {
-        \textbf{LinkedIn}{/bhushansonawane}
-     }
-     \href{https://www.github.com/bhushan23} {
-        \textbf{GitHub}{/bhushan23}
-     }
-  \resumeSubHeadingListEnd
-%-------------------------------------------
 
 %-----------EDUCATION-----------------
 \section{Education}
@@ -100,6 +87,9 @@
     \resumeSubheading
       {SUNY StonyBrook University}{StonyBrook, NY}
       {Master of Science in Computer Science}{Aug 2017 - Dec 2018}
+      \resumeItemListStart
+        \resumeItem{Courses} {Artificial Intelligence, Smart Energy, Analysis of Algorithm, Computing with Logic}
+        \resumeItemListEnd
     \resumeSubheading
       {Vishwakarma Institute of Technology}{Pune, India}
       {Bachelor of Technology in Computer Engineering;  GPA: 9.27/10.0}{Aug 2011 -- May 2015}
@@ -115,11 +105,11 @@
       {System Software Engineer, Compiler}{Jun 2015 - Jul 2017}
       \resumeItemListStart
         \resumeItem{Compile time and memory infrastructure}
-          {Profiling infrastructure; Helps finding high compile time issues on tegra(GL) and DX content; Actively used across driver and compiler teams for tegra content analysis; Helped finding deprecated heuristics in register allocator and phases within scheduler.}
+          {Profiling infrastructure; helps finding high compile time issues on tegra(GL) and DX content; Actively used across driver and compiler teams for tegra content analysis; helped find deprecated heuristics in register allocator and phases within scheduler.}
         \resumeItem{Early copy propagation}
-          {Implemented for Nintendo Switch; Improved Nintendo developers compile time from an hour to few minutes.}
+          {Phase ordering of copy propagation; Reduced number of instructions processed by optimizer; Improved compile time from few hours to few minutes for specialized shaders; Significant compile time savings observed for Nintendo developers (e.g. 90 minutes to 3 minutes)}
         \resumeItem{Assembler}
-          {Implemented DWARF 2.0 compliant debug frame support for CUDA 9.0;}
+          {Implemented DWARF 2.0 compliant debug frame support for CUDA 9.0; Implemented Vendor specific extensions to support DWARF 3.0 features in DWARF 2.0; Implemented infrastructure ready to go for DWARF 3.0 debug frame support.}
         \resumeItem{Misc}
           {Implemented/Enhanced various peephole optimizations; Multiple interface and heuristic changes.}
       \resumeItemListEnd
@@ -128,12 +118,8 @@
       {Nvidia}{Pune, India}
       {Intern, Compiler}{Jun 2014 - Apr 2015}
       \resumeItemListStart
-        \resumeItem{Register Allocator}
-          {Implemented Partitioned Boolean Quadratic Problem based register allocator for Nvidia compiler; 98\% of existing tests improved; Slides:  \href{http://slides.com/bhushansonawane/deck/}{http://slides.com/bhushansonawane/deck/}\\}
-        \resumeItem{LLVM}
-          {Implemented Peephole optimizations in LLVM.}
-        \resumeItem{DFA}
-          {Worked on data flow analysis problems.}
+        \resumeItem{PBQP based Register Allocator}
+          {Implemented Partitioned Boolean Quadratic Problem based register allocator for Nvidia compiler; 98\% of existing tests improved (graphics and compute tests);\\Slides:  \href{http://slides.com/bhushansonawane/deck/}{http://slides.com/bhushansonawane/deck/}\\}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -172,7 +158,7 @@
       \hfill
     }
     \item{
-      \textbf{Technologies}{: Django, Grails, Android, Database, GCov, Coverity}
+      \textbf{Technologies}{: LLVM, DFA, Django, Grails, Android, Database, GCov, Coverity}
       \hfill
     }
   \resumeSubHeadingListEnd
