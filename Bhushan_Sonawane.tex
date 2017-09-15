@@ -80,7 +80,6 @@
 \end{tabular*}
 
 
-
 %-----------EDUCATION-----------------
 \section{Education}
   \resumeSubHeadingListStart
@@ -105,13 +104,13 @@
       {System Software Engineer, Compiler}{Jun 2015 - Jul 2017}
       \resumeItemListStart
         \resumeItem{Compile time and memory infrastructure}
-          {Collaborated with OpenGL driver and GLSL Front-end compiler team and implemented Profiling infrastructure; Helps finding high compile time issues on tegra devices(GL content) and DX content on desktop; Actively used across driver and compiler teams for tegra content analysis; Found deprecated heuristics in register allocator and phases within scheduler using this infrastructure.}
+          {Collaborated with OpenGL driver and GLSL Front-end compiler team and implemented Profiling infrastructure; Helps finding high compile time issues on tegra devices(GL content) and DX content on desktop; Actively used across driver and compiler teams for tegra content analysis; Found deprecated heuristics in register allocator and phases within scheduler using this infrastructure. [C++]}
         \resumeItem{Early copy propagation}
-          {Phase ordering of copy propagation; Collaborated with custom driver team for Nintendo Switch. Reduced number of instructions processed by optimizer; Improved compile time from few hours to few minutes for specialized shaders; Significant compile time savings observed for Nintendo specialized shaders (e.g. 90 minutes to 3 minutes)}
+          {Phase ordering of copy propagation; Collaborated with custom driver team for Nintendo Switch. Reduced number of instructions processed by optimizer; Improved compile time from few hours to few minutes for specialized shaders; Significant compile time savings observed for Nintendo specialized shaders (e.g. 90 minutes to 3 minutes) [C++]}
         \resumeItem{Assembler}
-          {Implemented DWARF 2.0 compliant debug frame support for CUDA 9.0; Implemented Vendor specific extensions to support DWARF 3.0 features in DWARF 2.0; Implemented infrastructure ready to go for DWARF 3.0 debug frame support.}
+          {Implemented DWARF 2.0 compliant debug frame support for CUDA 9.0; Implemented Vendor specific extensions to support DWARF 3.0 features in DWARF 2.0; Implemented infrastructure ready to go for DWARF 3.0 debug frame support. [C]}
         \resumeItem{Misc}
-          {Implemented/Enhanced various peephole optimizations; Multiple interface and heuristic changes.}
+          {Implemented/Enhanced various peephole optimizations; Multiple interface and heuristic changes. [C/C++/Python]}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -119,15 +118,15 @@
       {Intern, Compiler}{Jun 2014 - Apr 2015}
       \resumeItemListStart
         \resumeItem{PBQP based Register Allocator}
-          {Implemented Partitioned Boolean Quadratic Problem based register allocator for Nvidia compiler; 98\% of existing tests improved (graphics and compute tests);\\Slides:  \href{http://slides.com/bhushansonawane/deck/}{http://slides.com/bhushansonawane/deck/}\\}
+          {Implemented Partitioned Boolean Quadratic Problem based register allocator for Nvidia compiler; 98\% of existing tests improved (graphics and compute tests); [C++]\\Slides:  \href{http://slides.com/bhushansonawane/deck/}{http://slides.com/bhushansonawane/deck/}\\}
       \resumeItemListEnd
 
     \resumeSubheading
       {Vishwakarma Institute of Technology}{Pune, India}
       {Visiting Instructor}{Jan 2017 - May 2017}
       \resumeItemListStart
-        \resumeItem{}
-           {Instructed third year undergraduate course 'Problem solving and programming'}
+        \resumeItem {Instructed}
+           {Third year undergraduate course 'Problem solving and programming'}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -136,13 +135,13 @@
 \section{Projects}
   \resumeSubHeadingListStart
     \resumeSubItem{Smart Energy}
-      {Applying deep learning techniques to monitor and predict energy consumption; Using predictions to reduce energy consumption.}
+      {Applying deep learning techniques to monitor and predict energy consumption; Using predictions to reduce energy consumption; Current status: Survey. [Python]}
+    \resumeSubItem{Simulated self driving car}
+      {Using Deep Q-Learning to simulate autonomous car via reinforcement learning; Using Udacity's self-driving-car-sim simulator; Current status: Experimenting with Udacity's simulator to output driving level to be used by reinforcement learning agent. [Python]}
     \resumeSubItem{Patient tracking and reporting}
-      {Automatic appointment scheduling and managing; Interface through text and web-app(Grails); Under collaboration of SUNY Binghamton and VIT Pune. }
+      {Automatic appointment scheduling and managing; Interface through text and web-app(Grails); Under collaboration of SUNY Binghamton and VIT Pune. [Groovy]}
     \resumeSubItem{Antivirus}
-      {Implemented MD5 algorithm to detect malicious, duplicate and comprised files.}
-    \resumeSubItem{GroupPlay}
-      {Synchronize all devices for audio playback over wifi.}
+      {Implemented MD5 algorithm to detect malicious, duplicate and comprised files. [Java]}
   \resumeSubHeadingListEnd
 
 %
@@ -150,15 +149,11 @@
 \section{Programming Skills}
   \resumeSubHeadingListStart
     \item{
-      \textbf{Languages}{: C++, C, Python, Java, Groovy}
+      \textbf{Languages}{: C++, C, Python, Java, Groovy, GLSL.}
       \hfill
     }
     \item{
-      \textbf{Libraries}{: Tensorflow, scikit-learn}
-      \hfill
-    }
-    \item{
-      \textbf{Technologies}{: GLSL, LLVM, DFA, Django, Grails, Android, Database, GCov, Coverity}
+      \textbf{Technologies}{: Tensorflow, Scikit-learn, LLVM, Django, Grails, Android, Database, GCov, Coverity.}
       \hfill
     }
   \resumeSubHeadingListEnd
