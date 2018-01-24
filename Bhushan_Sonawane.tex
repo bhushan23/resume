@@ -85,32 +85,48 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {SUNY StonyBrook University}{StonyBrook, NY}
-      {Master of Science(Thesis) in Computer Science, Data Science Specialization}{May 2019}
+      {Master of Science in Computer Science}{May 2019}
       \resumeItemListStart
-        \resumeItem{Courses} {Artificial Intelligence, Smart Energy, Analysis of Algorithm, Computing with Logic}
+         \resumeItem{Thesis} {Face editing using GANs; Advisor: Dr. Dimitris Samaras}
+        \resumeItem{Courses} {Artificial Intelligence, Smart Energy, Analysis of Algorithm, Machine Learning, Convex Optimization, Probability and Statistics for Data Science}
+        \resumeItem{Computer Vision Lab} {Face editing using Generative Adversarial Networks}
         \resumeItemListEnd
     \resumeSubheading
       {Vishwakarma Institute of Technology}{Pune, India}
-      {Bachelor of Technology in Computer Engineering;  GPA: 9.27/10.0}{May 2015}
+      {Bachelor of Technology in Computer Engineering}{May 2015}
   \resumeSubHeadingListEnd
 
 
 %-----------EXPERIENCE-----------------
 \section{Experience}
   \resumeSubHeadingListStart
-
+     \resumeSubheading
+      {SUNY Research Foundation}{StonyBrook, NY}
+      {Senior Research Assistant}{Jan 2018 - Current}
+      \resumeItemListStart
+        \resumeItem{Converting images into tiled TIFF format}
+        {Developing a image parsing tool for converting proprietary bio-medical image format into tiled TIFF image format. [C]}
+      \resumeItemListEnd
     \resumeSubheading
       {Nvidia}{Pune, India}
       {System Software Engineer, Compiler}{Jun 2015 - Jul 2017}
       \resumeItemListStart
         \resumeItem{Compile time and memory infrastructure}
-          {Collaborated with OpenGL driver and GLSL Front-end compiler team for implementing Profiling infrastructure; It helps find high compile time issues on Tegra devices(GL content) and DirectX content on desktop; Actively used across driver and compiler teams for Tegra content analysis; Found deprecated heuristics in register allocator and phases within scheduler using this infrastructure. [C++]}
+          {Collaborated with OpenGL driver and GLSL Front-end compiler team for implementing Profiling infrastructure; Actively used for Tegra content analysis; Found deprecated heuristics in register allocator and phases within scheduler using this infrastructure. [C++]}
         \resumeItem{Early copy propagation}
-          {Phase ordering of copy propagation; Collaborated with custom driver team for Nvidia customer. Reduced number of instructions processed by optimizer; Improved compile time from few hours to few minutes for specialized shaders; Significant compile time savings observed for customer's specialized shaders (e.g. 90 minutes to 3 minutes) [C++]}
+          {Phase ordering of copy propagation; Reduced number of instructions processed by optimizer; Improved compile time from few hours to few minutes for specialized shaders; [C++]}
         \resumeItem{Assembler}
-          {Implemented DWARF 2.0 compliant debug frame support for CUDA 9.0; Implemented Vendor specific extensions to support DWARF 3.0 features in DWARF 2.0; Implemented infrastructure ready to go for DWARF 3.0 debug frame support. [C]}
+          {Implemented DWARF 2.0 compliant debug frame support for CUDA 9.0; Implemented Vendor specific extensions to support DWARF 3.0 features in DWARF 2.0; [C]}
         \resumeItem{Misc}
-          {Implemented/Enhanced various peephole optimizations, interface and heuristic. [C/C++/Python]}
+          {Implemented/Enhanced various peephole optimizations, interfaces and heuristics. [C/C++/Python]}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Vishwakarma Institute of Technology}{Pune, India}
+      {Visiting Instructor}{Jan 2017 - May 2017}
+      \resumeItemListStart
+        \resumeItem {Instructed}
+           {Third year undergraduate course 'Problem Solving and Programming'}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -121,29 +137,17 @@
           {Implemented Partitioned Boolean Quadratic Problem based register allocator for Nvidia compiler; 98\% of existing tests improved (graphics and compute tests); [C++]\\Slides:  \href{http://slides.com/bhushansonawane/deck/}{http://slides.com/bhushansonawane/deck/}\\}
       \resumeItemListEnd
 
-    \resumeSubheading
-      {Vishwakarma Institute of Technology}{Pune, India}
-      {Visiting Instructor}{Jan 2017 - May 2017}
-      \resumeItemListStart
-        \resumeItem {Instructed}
-           {Third year undergraduate course 'Problem Solving and Programming'}
-      \resumeItemListEnd
+
   \resumeSubHeadingListEnd
 
 
 %-----------PROJECTS-----------------
-\section{Projects}
+\section{Select Projects}
   \resumeSubHeadingListStart
-    \resumeSubItem{Managing power supply of appliances for energy conservation}
-      {Home appliances consumes significant power in stand by mode; Providing Internet of Things and Machine Learning solution; Training a neural network to understand appliances' usage pattern and use it for predicting when appliance is not used and can be completely turned off by cutting power supply; Using transfer learning for quickly adapting new home's usage pattern. [Python]}
-    \resumeSubItem{Simulated self driving car}
-      {Using Deep Q-Learning to simulate autonomous car via reinforcement learning; Using Udacity's self-driving-car-sim simulator. [Python]}
-    \resumeSubItem{Patient tracking and reporting}
-      {Automatic appointment scheduling and managing; Interface through text and web-app(Grails); Under collaboration of SUNY Binghamton and VIT Pune. [Groovy]}
-    \resumeSubItem{Antivirus}
-      {Using MD5 algorithm for detecting malicious, duplicate and comprised files. [Java]}
-    \resumeSubItem{GroupPlay}
-      {Synchronize all devices for audio playback over wifi. [Java]}
+    \resumeSubItem{SmartOFF - Managing power supply of appliances for energy conservation}
+      {Home appliances consumes significant power in stand by mode; Internet of Things and Machine Learning solution; LSTM model to understand and predict appliances' usage pattern and control power supply accordingly. [Python, scikit-learn, Tensorflow, Keras]}
+    \resumeSubItem{ATARGS - Patient tracking and reporting}
+      {Automatic appointment scheduling and managing; Interface through text and web-app(Grails); Under collaboration of SUNY Binghamton and VIT; Deployed at Poona Hopital. [Groovy]}
   \resumeSubHeadingListEnd
 
 %
@@ -151,15 +155,13 @@
 \section{Programming Skills}
   \resumeSubHeadingListStart
     \item{
-      \textbf{Languages}{: C++, C, Python, Java, Groovy, GLSL, Prolog.}
+      \textbf{Languages}{: C++, C, Python, Java, Groovy, Prolog}
       \hfill
     }
     \item{
-      \textbf{Technologies}{: Tensorflow, Scikit-learn, LLVM, Django, Grails, Android, Database, GCov, Coverity.}
-      \hfill
+      \textbf{Technologies}{: Tensorflow, Scikit-learn, Keras, OpenCV, LLVM, Django, Grails, Android.}
     }
   \resumeSubHeadingListEnd
-
 %
 %--------AWARDS------------
 \section{Awards}
