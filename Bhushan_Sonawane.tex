@@ -50,6 +50,12 @@
   }
 }
 
+\newcommand{\resumeItemV}[2]{
+  \item\small{
+    \textbf{#1}{#2 \vspace{-2pt}}
+  }
+}
+
 \newcommand{\resumeSubheading}[4]{
   \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
@@ -89,7 +95,7 @@
       \resumeItemListStart
          \resumeItem{Thesis} {Face editing using GANs; Advisor: Dr. Dimitris Samaras}
         \resumeItem{Courses} {Artificial Intelligence, Smart Energy, Analysis of Algorithm, Machine Learning, Convex Optimization, Probability and Statistics for Data Science}
-        \resumeItem{Computer Vision Lab} {Face editing using Generative Adversarial Networks}
+        \resumeItemV{Member of Computer Vision Lab}
         \resumeItemListEnd
     \resumeSubheading
       {Vishwakarma Institute of Technology}{Pune, India}
@@ -144,6 +150,8 @@
 %-----------PROJECTS-----------------
 \section{Select Projects}
   \resumeSubHeadingListStart
+  \resumeSubItem{Face Editing using Generative Adversarial Networks}
+  {Applying GANs for facial geometry construction and editing facial attributes. [Python, Tensorflow]}
     \resumeSubItem{SmartOFF - Managing power supply of appliances for energy conservation}
       {Home appliances consumes significant power in stand by mode; Internet of Things and Machine Learning solution; LSTM model to understand and predict appliances' usage pattern and control power supply accordingly. [Python, Scikit-learn, Tensorflow, Keras]}
     \resumeSubItem{ATARGS - Patient tracking and reporting}
