@@ -106,60 +106,52 @@
 %-----------EXPERIENCE-----------------
 \section{Experience}
   \resumeSubHeadingListStart
-     \resumeSubheading
+  \resumeSubheading
       {SUNY Research Foundation}{StonyBrook, NY}
       {Senior Research Aide}{Jan 2018 - Current}
       \resumeItemListStart
-        \resumeItem{Converting images into tiled TIFF format}
-        {Developing tool for converting high resolution proprietary bio-medical images into tiled TIFF images; Working with StonyBrook Bio-Medical department [C]}
+        \resumeItem{Image parser tool}{Tool for converting high resolution proprietary bio-medical images into tiff format; [C]}
       \resumeItemListEnd
     \resumeSubheading
       {Nvidia}{Pune, India}
       {System Software Engineer, Compiler}{Jun 2015 - Jul 2017}
       \resumeItemListStart
-        \resumeItem{Compile time and memory infrastructure}
-          {Collaborated with OpenGL driver and GLSL Front-end compiler team for implementing Compile time and Memory usage profiling infrastructure [C++]}
-        \resumeItem{Early copy propagation}
-          {Phase ordering of copy propagation; Reduced number of instructions processed by optimizer; Improved compile time from few hours to few minutes for specialized shaders; [C++]}
-        \resumeItem{Assembler}
-          {Implemented DWARF 2.0 compliant debug frame support for CUDA 9.0; Implemented Vendor specific extensions to support DWARF 3.0 features in DWARF 2.0; [C]}
-        \resumeItem{Misc}
-          {Implemented/Enhanced various peephole optimizations, interfaces and heuristics. [C/C++/Python]}
+        \resumeItem{Optimizing compiler} {Worked on Nvidia Tegra graphics and CUDA compute compiler; Improved peephole optimizations; OpenGL/DX driver interfaces; Optimization for compile time improvements; Developed Profiling infrastructure; Worked on Tegra(Android) compiler issues; Worked on Coverity, GCov; [C/C++]}
+        \resumeItem{Assembler}{Implemented DWARF 2.0 compliant debug frame support for CUDA 9.0. [C]}
       \resumeItemListEnd
-
+%\begin{comment}
     \resumeSubheading
       {Vishwakarma Institute of Technology}{Pune, India}
       {Visiting Instructor}{Jan 2017 - May 2017}
       \resumeItemListStart
         \resumeItem {Instructed}
-           {Third year undergraduate course 'Problem Solving and Programming'}
+           {Third year undergraduate course \href{https://www.hackerrank.com/coding-puzzles/}{'Problem Solving and Programming'}}
       \resumeItemListEnd
-     
+%\end{comment}
     \resumeSubheading
       {Nvidia}{Pune, India}
       {Intern, Compiler}{Jun 2014 - Apr 2015}
       \resumeItemListStart
-        \resumeItem{PBQP based Register Allocator}
-          {Implemented Partitioned Boolean Quadratic Problem based register allocator for Nvidia compiler; 98\% of existing tests improved (graphics and compute tests); [C++]\\Slides:  \href{http://slides.com/bhushansonawane/deck/}{http://slides.com/bhushansonawane/deck/}\\}
+        \resumeItem{\href{http://slides.com/bhushansonawane/deck/}{ PBQP based Register Allocator}}{Implemented Partitioned Boolean Quadratic Problem based register allocator for Nvidia compiler; 98\% of existing tests improved (graphics and compute tests); [C++]}
       \resumeItemListEnd
-
-    
   \resumeSubHeadingListEnd
 
 
 %-----------PROJECTS-----------------
 \section{Projects}
   \resumeSubHeadingListStart
-    \resumeSubItem{Face Editing using Generative Adversarial Networks}
-    {[Ongoing] Applying GANs for facial geometry construction and editing facial attributes; Using CelebFaces Attributes Dataset; End goal is to be able to do realistic face editing- similar to what pix2pixHD did on semantic label maps; Also implemented CNNs, AE, VAE; [Python, PyTorch]}
-    \resumeSubItem{Generating fake Super-Heroes}
-    {[Ongoing] Training Deep Convolutional Generative Adversarial Network with lots of superhero images in order to generate fake ones; Currently collecting data; [Python, PyTorch]}
-    \resumeSubItem{SmartOFF - Managing power supply of appliances for energy conservation}
+    \resumeSubItem{Lighting estimation for faces}
+    {[WIP] Lighting estimation is important for face editing tasks; Existing light estimation from single face are inefficient; We are trying use Neural Networks for improving light estimation from single image;}
+    \resumeSubItem{\href{https://github.com/bhushan23/GAN}{Co-Operative GANs}}{[WIP] New method for training Generative Adversarial Netowrks; Multiple Generators are trained and the end of every iteration, every generator copies best performing Generator; This helps overcoming mode collapsing and faster convergence; Validated on MINST, CelebA datasets. [Python, PyTorch]}
+    \resumeSubItem{Generating fake Super-Heroes}{[WIP] Training Deep Convolutional Generative Adversarial Network with lots of superhero images in order to generate fake ones; Currently collecting data; [Python, PyTorch]}
+    \resumeSubItem{\href{https://github.com/bhushan23/Computer-Vision}{Deep Learning for Computer Vision}}{Implemented CNNs for CIFAR-10 object recognition; Implemented Auencoders and GANs for image generation; [Python, PyTorch]}
+    \resumeSubItem{\href{https://github.com/bhushan23/StonyBrookMasters/tree/master/Spring_18/ML/assignment}{Machine Learning Algorithms}}{Implemented Linear regression, Lasso regression, Support Vector Machine, Stochastic Gradient Descent. [Python, Matlab]}
+    \resumeSubItem{\href{https://github.com/bhushan23/SmartOff}{SmartOFF - Managing power supply of appliances for energy conservation}}
     {Home appliances consumes significant power in stand by mode; Internet of Things and Machine Learning solution; LSTM model to understand and predict appliances' usage pattern and control power supply accordingly. [Python, Scikit-learn, Tensorflow, Keras]}
-    \resumeSubItem{ATARGS - Patient tracking and reporting}{Automatic appointment scheduling and managing; Interface through text and web-app(Grails); Under collaboration of SUNY Binghamton and VIT; Deployed at Poona Hopital. [Groovy]}
+    \resumeSubItem{\href{https://github.com/bhushan23/ATARGS3}{ATARGS - Patient tracking and reporting}}{Automatic appointment scheduling and managing; Interface through text and web-app(Grails); Under collaboration of SUNY Binghamton and VIT; Deployed at Poona Hopital. [Groovy]}
       \resumeSubItem{GroupPlay}
       {Synchronize all devices for audio playback over wifi. [Android, Java]}
-      \resumeItem{Antivirus}{Detecting malicious and duplicate files using MD5 and SHA-256 algorithm; Used Avast antivirus virus dataset. [Python, Java]}
+      \resumeItem{Ani Malware Software}{Detecting malicious and duplicate files using MD5 and SHA-256 algorithm; \\Used Avast antivirus virus dataset. [Java]}
   \resumeSubHeadingListEnd
 
 %
@@ -167,7 +159,7 @@
 \section{Skills}
   \resumeSubHeadingListStart
     \item{
-      \textbf{}{C++, C, Python, Java, Groovy, Prolog, PyTorch, Tensorflow, Keras, LLVM, Django, Grails, Android}
+      \textbf{}{C++, C, Python, Java, Groovy, Matlab, Prolog, PyTorch, Tensorflow, Keras, LLVM, Django, Grails, Android}
       \hfill
     }
   \resumeSubHeadingListEnd
